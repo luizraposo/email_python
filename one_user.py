@@ -20,7 +20,7 @@ msg['subject'] = 'Assunto'
 corpo = MIMEText('')
 msg.attach(corpo)
 
-with smtplib.SMTP('smtp.dc1.buy4.io:587') as smtp:
+with smtplib.SMTP('') as smtp:
     try:
         smtp.ehlo()
         smtp.starttls()
